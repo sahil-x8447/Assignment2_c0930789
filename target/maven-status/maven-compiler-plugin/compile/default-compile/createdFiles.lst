@@ -1,0 +1,5 @@
+org\example\Person.class
+org\example\Person$PersonBuilder.class
+org\example\Blog.class
+org\example\BlogPost.class
+org\example\BlogPost$BlogPostBuilder.class
