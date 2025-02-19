@@ -3,8 +3,10 @@ package org.example;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
-
 import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
+
 
 // The Blog class represents a blog containing posts and contributors.
 @Getter
@@ -22,4 +24,13 @@ public class Blog {
         this.posts = posts;
         this.contributors = contributors;
     }
+
+    public List<String> getPostsByAuthorAge(Integer age) {
+        return posts.stream()
+                .filter(post -> contributors.stream()
+                        .anyMatch(person -> person.getId().equals(post.getAuthorId()) && Objects.equals(person.getAge(), age)))
+                .map(BlogPost::getId)
+                .collect(Collectors.toList());
+    }
+
 }

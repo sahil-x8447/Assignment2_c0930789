@@ -1,0 +1,23 @@
+[
+  {
+    "id": "author1",
+    "firstName": "Sahil",
+    "lastName": "Sharma",
+    "age": 23,
+    "gender": "Male"
+  },
+  {
+    "id": "author2",
+    "firstName": "Ana de",
+    "lastName": "Armas",
+    "age": 25,
+    "gender": "Female"
+  },
+  {
+    "id": "author3",
+    "firstName": "John",
+    "lastName": "Cena",
+    "age": 39,
+    "gender": "Male"
+  }
+]
